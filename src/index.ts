@@ -1,4 +1,7 @@
-import { Dwarf } from './Races';
+import { Dwarf, Orc } from './Races';
 
-const gimli = new Dwarf('Gimli', 80);
-console.log('este é o anão', gimli);
+const gimli = new Dwarf('Gimli', 30);
+console.log('Campeão', gimli);
+
+const TwoIronFirst = new Orc('TwoIronFirst', 25);
+console.log('Campeão', TwoIronFirst);
