@@ -1,3 +1,4 @@
+import Mage from './Archetypes/Mage';
 import { Dwarf, Orc, Elf, Halfling } from './Races';
 
 const gimli = new Dwarf('Gimli', 30);
@@ -11,3 +12,6 @@ console.log('Campeão', legolas);
 
 const frodo = new Halfling('Frodo', 80);
 console.log('Campeão', frodo);
+
+const mage = new Mage('Talud');
+console.log('Mage', mage);
