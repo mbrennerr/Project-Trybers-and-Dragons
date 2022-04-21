@@ -111,7 +111,8 @@ export default class Character implements Fighter {
     // });
   }
 
-  // special(enemy: Fighter): void {
-  //   throw new Error('Method not implemented.');
-  // }
+  special(enemy: Fighter): void {
+    const speacialAtack = this._strength / this._dexterity;
+    enemy.receiveDamage(speacialAtack);    
+  }
 }
