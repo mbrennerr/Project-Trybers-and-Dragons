@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
-import Fighter from './Fighter';
+import Fighter, { SimpleFighter } from './Fighter';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
@@ -84,8 +84,8 @@ export default class Character implements Fighter {
     return lifePoints;
   }
   
-  attack(enemy: Fighter): void {
-    const damage = this._strength;
+  attack(enemy: SimpleFighter): void {
+    const damage:number = this._strength;
     enemy.receiveDamage(damage);
   }
   
@@ -111,8 +111,8 @@ export default class Character implements Fighter {
     // });
   }
 
-  special(enemy: Fighter): void {
-    const speacialAtack = this._strength / this._dexterity;
-    enemy.receiveDamage(speacialAtack);    
+  special(enemy: SimpleFighter): void {
+    const specialAtack = this._strength / this._dexterity;
+    enemy.receiveDamage(specialAtack);    
   }
 }

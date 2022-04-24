@@ -1,6 +1,6 @@
 export default interface SimpleFighter {
   lifePoints:number;
   strength:number;
-  atack(enemy:SimpleFighter):void;
+  attack(enemy:SimpleFighter):void;
   receiveDamage(attackPoints:number):void
 }
